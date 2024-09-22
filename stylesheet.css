@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling für den Header */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling für den Namen */
+header h1 {
+    font-size: 24px;
+}
+
+/* Styling für die Navigation */
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; /* Abstand zwischen den Links */
+}
+
+/* Styling für die Navigations-Links */
+nav ul li {
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover-Effekt für die Links */
+nav ul li a:hover {
+    background-color: #555;
+    color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Profil-Section Styling */
+section {
+    display: flex;
+    justify-content: space-evenly; /* Zentriert die Inhalte horizontal */
+    align-items: center; /* Zentriert die Inhalte vertikal */
+    padding: 50px;
+    background-color: #f4f4f4; /* Hintergrundfarbe der Sektion */
+    gap: 30px; /* Abstand zwischen den beiden Divs */
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling für das Bild */
+section img {
+    width: 300px; /* Größe des Bildes anpassen */
+    height: auto;
+    border-radius: 50%; /* Rundes Profilbild */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für das Bild */
+}
+
+/* Styling für den Text */
+section h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive Design: Bei kleinen Bildschirmen werden die Divs untereinander angeordnet */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+}
