@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/App.css'; // Du kannst auch eine separate CSS-Datei für den Header erstellen
 import './styles/header.css';
+import menuIcon from "./images/menuBar.jpg"
 
 function Header() {
     const toggleDropdown = () => {
@@ -9,7 +10,7 @@ function Header() {
     };
 
     const handleClickOutside = (event) => {
-        if (!event.target.matches('.dropbtn')) {
+        if (!event.target.matches('.menuIcon')) {
             const dropdowns = document.getElementsByClassName("dropdown-content");
             for (let i = 0; i < dropdowns.length; i++) {
                 const openDropdown = dropdowns[i];
@@ -20,12 +21,19 @@ function Header() {
         }
     };
 
-    window.onclick = handleClickOutside;
+    
+    React.useEffect(() => {
+        window.addEventListener('click', handleClickOutside);
+        return () => {
+            window.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
+        
 
     return (
         <header>
             <div className="dropdown">
-                <button className="dropbtn" onClick={toggleDropdown}>Menu</button>
+                <button className='menuIcon' onClick={toggleDropdown}><img className="menuIcon" src={menuIcon} alt='Menu' /></button>
                 <div className="dropdown-content" id="dropdownMenu">
                     <ul>
                         <li>Homepage</li>

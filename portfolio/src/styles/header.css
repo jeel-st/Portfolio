@@ -1,19 +1,10 @@
 header {
     background-color: #b8afaf;
-    color: grey;
+    color: #706d6f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-  }
-  
-  .dropbtn {
-    background-color: #918d90;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
   }
   
   .dropdown {
@@ -24,7 +15,8 @@ header {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #494848;
+    background-color: #807c7f;
+    color: white;
     min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -44,3 +36,16 @@ header {
   .dropdown-content li:hover {
     background-color: #b8afaf;
   }
+
+  .menuIcon{
+    width: 50px;
+    height:50px;
+    border: none;
+    cursor: pointer;
+    background-color: #b8afaf;
+  }
+
+  .menuIcon:hover{
+    filter:brightness(95%)
+  }
+  

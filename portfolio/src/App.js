@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './styles/aboutMe.css';
 import Header from './header'; // Importiere den Header
 import myImage from "./images/BildJoelDunkel.JPG"
@@ -6,6 +8,9 @@ import ContactButton from './buttons/ContactButton'; // Importiere die ContactBu
 
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <div>
       <Header /> {/* Verwende den Header hier */}
@@ -21,7 +26,7 @@ function App() {
         </section>
         <section>
           <div className="aboutMe">
-            <div className="aboutMeInnerText">
+            <div className="aboutMeInnerText" data-aos="fade-up">
               <h3>Some words about me</h3>
               <p>My name is Joel Jeremy Starkov and I study Media Informatics at the Stuttgart Media University.
                 I like to do sport in my free time. Among other things, I shoot air rifle in the second national league
