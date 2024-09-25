@@ -21,7 +21,7 @@ function App() {
         </section>
         <section>
           <div className="aboutMe">
-            <div>
+            <div className="aboutMeInnerText">
               <h3>Some words about me</h3>
               <p>My name is Joel Jeremy Starkov and I study Media Informatics at the Stuttgart Media University.
                 I like to do sport in my free time. Among other things, I shoot air rifle in the second national league
@@ -29,7 +29,7 @@ function App() {
                 I also like fishing and anything to do with computers and technology.<br />
               </p>
             </div>
-            <div>
+            <div className="aboutMeInnerText" data-aos="fade-up">
               <h3>Skills</h3>
               <p>
                 During my studies, I have already become familiar with various programming languages, including Java, Kotlin, JavaScript, React, CSS and HTML.
