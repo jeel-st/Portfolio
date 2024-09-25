@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b8afaf;
+}
+
+/* Responsive Design: Bei kleinen Bildschirmen werden die Divs untereinander angeordnet */
+@media (max-width: 768px) {
+  section {
+      flex-direction: column;
+  }
+}
