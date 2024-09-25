@@ -14,33 +14,69 @@
 <body>
 
     <header>
-        <div>
-            <h1>Joel Starkov</h1>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Menu</button>
+            <div class="dropdown-content" id="dropdownMenu">
+                <ul>
+                    <li>Homepage</li>
+                    <li>Education and jobs</li>
+                    <li>Projects</li>
+                    <li>About me</li>
+                </ul>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li>Startseite</li>
-                <li>Bildung</li>
-                <li>Projekte</li>
-                <li>Kontakt</li>
-            </ul>
-        </nav>
+        <div>
+            <h1>Joel Jeremy Starkov</h1>
+        </div>
     </header>
     <main>
-        <section>
-            <div><img src="BildJoelHell.jpg" alt="Profilbild"></div>
-            <div>
-                <h3>Joel Jeremy Starkov</h3>
-                <p>Informatiker</p>
+        <section class="pictureName">
+            <div class="hpText">
+                <p class="hpSmallFont">Hi,</p>
+                <h3 class="hpLargeFont">I AM JOEL</h3>
+                <p class="hpSmallFont">a Computer scientist student</p>
+                <button id="aboutMeButton">Contact</button>
+            </div>
+            <div><img src="BildJoelDunkel.JPG" alt="Profilbild" id="firstHomePicture"></div>
+        
+        </section>
+        <section >
+            <div class="aboutMe">
+                <div>
+                    <p>Some words about me</p>
+                </div>
+                <div>
+                    <p>My name is Joel Jeremy Starkov and I study Media Informatics at the VfB Stuttgart Media University.
+                        I like to do sport in my free time. Among other things, I shoot air rifle in the second national league
+                        and also play volleyball in a club.
+                        I also like fishing and anything to do with computers and technology.</p>
+                </div>
             </div>
         </section>
-        <section>
-            
-        </section>
-    </main>
-    <footer>
+        </main>
+        <footer>
+        </footer>
 
-    </footer>
+    <script>
+        function toggleDropdown() {
+            const dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+        }
+
+        // Optional: Schließe das Dropdown, wenn außerhalb geklickt wird
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        };
+    </script>
+
 </body>
 
 </html>

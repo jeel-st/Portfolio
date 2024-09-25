@@ -6,86 +6,109 @@
 
 /* Styling für den Header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #b8afaf;
+    color: grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
 
-/* Styling für den Namen */
-header h1 {
-    font-size: 24px;
-}
-
-/* Styling für die Navigation */
-nav {
-    flex-grow: 1;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px; /* Abstand zwischen den Links */
-}
-
-/* Styling für die Navigations-Links */
-nav ul li {
-    font-size: 18px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Hover-Effekt für die Links */
-nav ul li a:hover {
-    background-color: #555;
-    color: #f0f0f0;
-    border-radius: 5px;
-}
-
-/* Profil-Section Styling */
-section {
-    display: flex;
-    justify-content: space-evenly; /* Zentriert die Inhalte horizontal */
-    align-items: center; /* Zentriert die Inhalte vertikal */
-    padding: 50px;
-    background-color: #f4f4f4; /* Hintergrundfarbe der Sektion */
-    gap: 30px; /* Abstand zwischen den beiden Divs */
-}
-
-section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Styling für das Bild */
-section img {
-    width: 300px; /* Größe des Bildes anpassen */
-    height: auto;
-    border-radius: 50%; /* Rundes Profilbild */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für das Bild */
-}
-
-/* Styling für den Text */
-section h3 {
-    margin-top: 20px;
-    font-size: 22px;
-    color: #333;
-}
-
-section p {
+.dropbtn {
+    background-color: #918d90;
+    color: white;
+    padding: 16px;
     font-size: 16px;
-    color: #666;
+    border: none;
+    cursor: pointer;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #494848;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 13px;
+    text-align: left;
+}
+
+.dropdown-content li:hover {
+    background-color: #b8afaf;
+}
+
+.pictureName {
+    background-color: #b8afaf;
+    display: flex;
+    justify-content: space-evenly;  /*Gleichmäßiger Platz rechts und links von den divs*/
+    align-items: center;    /*Die Items werden in der Höhe genau in der Mitte angeordnet*/
+            /* padding: 50px;  Hier kann man den Abstand der Höhe zwischen den divs einstellen. In dem Fall den Abstand zwischen pictureName und dem header- Bereich*/
+    padding-bottom: 50px;
+}
+
+.hpSmallFont{
+    color: #646262;
+    font-size: 25px;
+}
+
+.hpLargeFont{
+    color: black;
+    font-size: 30px;
+}
+
+.hpText{
+    line-height:250%
+}
+
+.aboutMe {
+    background-color:#8e8888;
+    display: flex;
+    height: 200px;
+    align-items: left;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.aboutMe > div:first-child p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#aboutMeButton{
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px 24px;
+    background-color:#b8afaf;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-top: 25px;
+}
+
+#aboutMeButton:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#firstHomePicture {
+    width: 350px;
+    border-radius: 50%;
+    height: auto;
+}
 /* Responsive Design: Bei kleinen Bildschirmen werden die Divs untereinander angeordnet */
 @media (max-width: 768px) {
     section {
