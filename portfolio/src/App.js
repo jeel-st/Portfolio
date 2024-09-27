@@ -1,19 +1,21 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './styles/aboutMe.css';
-import Header from './header'; // Importiere den Header
-import myImage from "./images/BildJoelDunkel.JPG"
-import ContactButton from './buttons/ContactButton'; // Importiere die ContactButton-Komponente
+import Header from './header'; 
+import myImage from "./images/BildJoelDunkel.JPG";
+import ContactButton from './buttons/contactButton';
+import ContactPage from './contact'; // Importiere die Kontaktseite
 
 
-function App() {
+function HomePage() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
   return (
     <div>
-      <Header /> {/* Verwende den Header hier */}
       <main>
         <section className="pictureName">
           <div className="hpText">
@@ -50,6 +52,18 @@ function App() {
         {/* Hier kannst du Footer-Inhalte hinzufügen */}
       </footer>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} /> {/* Startseite */}
+        <Route path="/contact" element={<ContactPage />} /> {/* Kontaktseite */}
+      </Routes>
+    </Router>
   );
 }
 

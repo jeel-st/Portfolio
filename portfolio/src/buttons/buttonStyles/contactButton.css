@@ -5,6 +5,7 @@
     background-color: #b8afaf;
     font-family: "Lucida Console", "Courier New", monospace;
     margin-top: 25px;
+    cursor: pointer;
   }
   
   #aboutMeButton:hover {
