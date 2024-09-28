@@ -42,7 +42,7 @@ const MenuButton = ({ toggleDropdown }) => {
           <li>Education and jobs</li>
           <li>Projects</li>
           {/* Der Link führt zur Kontaktseite */}
-          <li onClick={handleContactClick} className="menu-link">About me</li>
+          <li onClick={handleContactClick} className="menu-link">Contact</li>
         </ul>
       </div>
     </div>
