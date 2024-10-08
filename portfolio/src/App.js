@@ -66,8 +66,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} /> {/* Startseite */}
-        <Route path="/contact" element={<ContactPage />} /> {/* Kontaktseite */}
-        <Route path="/projects" element={<ProjectPage />} /> {/* Kontaktseite */}
+        <Route path="/contact" element={<ContactPage />} /> 
+        <Route path="/projects" element={<ProjectPage />} /> 
       </Routes>
     </Router>
   );

@@ -15,6 +15,7 @@ const MenuButton = ({ toggleDropdown }) => {
   const handleProjectClick = () => {
     navigate("/projects")
   }
+  
   const handleClickOutside = (event) => {
     if (!event.target.matches('.menuIcon')) {
       const dropdowns = document.getElementsByClassName("dropdown-content");
@@ -42,9 +43,7 @@ const MenuButton = ({ toggleDropdown }) => {
       <div className="dropdown-content" id="dropdownMenu">
         <ul>
           <li onClick={handleHomepageClick} >Homepage</li>
-          <li>Education and jobs</li>
           <li onClick={handleProjectClick}>Projects</li>
-          {/* Der Link führt zur Kontaktseite */}
           <li onClick={handleContactClick} className="menu-link">Contact</li>
         </ul>
       </div>
