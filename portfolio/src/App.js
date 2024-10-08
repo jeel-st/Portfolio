@@ -6,18 +6,22 @@ import './styles/aboutMe.css';
 import Header from './header'; 
 import myImage from "./images/BildJoelDunkel.JPG";
 import ContactButton from './buttons/contactButton';
-import ContactPage from './contact'; // Importiere die Kontaktseite
-
+import ContactPage from './contact'; 
+import ProjectPage  from './projects'; 
 
 function HomePage() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ 
+      duration: 1000, 
+      offset: window.innerHeight * 0.2
+    });
   }, []);
 
   return (
     <div>
       <main>
-        <section className="pictureName">
+        <section >
+          <div className="pictureName">
           <div className="hpText">
             <p className="hpSmallFont">Hi,</p>
             <h3 className="hpLargeFont">I AM JOEL</h3>
@@ -25,6 +29,7 @@ function HomePage() {
             <ContactButton />
           </div>
           <div><img src={myImage} alt="Profilbild" id="firstHomePicture" /></div>
+          </div>
         </section>
         <section>
           <div className="aboutMe">
@@ -62,6 +67,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} /> {/* Startseite */}
         <Route path="/contact" element={<ContactPage />} /> {/* Kontaktseite */}
+        <Route path="/projects" element={<ProjectPage />} /> {/* Kontaktseite */}
       </Routes>
     </Router>
   );
