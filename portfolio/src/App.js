@@ -35,10 +35,14 @@ function HomePage() {
           <div className="aboutMe">
             <div className="aboutMeInnerText" data-aos="fade-up">
               <h3>Some words about me</h3>
-              <p>My name is Joel Jeremy Starkov and I study Media Informatics at the Stuttgart Media University.
-                I like to do sport in my free time. Among other things, I shoot air rifle in the second national league
-                and also play volleyball in a club.<br />
-                I also like fishing and anything to do with computers and technology.<br />
+              <p>Hi, I’m Joel Jeremy Starkov, a 21-year-old from Stuttgart. 
+                When I’m not studying Media Informatics at Stuttgart Media University, 
+                I dedicate a lot of my time to sports. I’m a competitive marksman and shoot air rifle in the second Bundesliga,
+                having already achieved several national successes. Besides that, I’m also active in a volleyball club, 
+                which helps me stay fit and work as part of a team.
+                <br/>
+                In my free time, I love fishing and spending time outdoors, but my passion for computers and technology is just as important. 
+                Whether it's programming, working with new tech, or solving complex problems, I'm always interested in learning and exploring more in the world of technology.
               </p>
             </div>
             <div className="aboutMeInnerText" data-aos="fade-up">
@@ -47,7 +51,16 @@ function HomePage() {
                 During my studies, I have already become familiar with various programming languages, including Java, Kotlin, JavaScript, React, CSS and HTML.
                 I also have practical experience with relational databases, especially PostgreSQL, as well as NoSQL databases such as MongoDB.
                 I have also acquired knowledge of development with Node.js. <br/>
-                My main area of interest is project planning and backend development.
+                My main area of interest is project planning and backend development.<br/>
+                In addition to my technical skills, I am fluent in English, and German is my native language.
+              </p>
+            </div>
+            <div className="aboutMeInnerText" data-aos="fade-up">
+              <h3>Education and jobs</h3>
+              <p>
+              In 2022, I completed my Abitur at the Rolf-Benz-Schule Nagold. Following that, I gained some working experience for six months in production at Heim GmbH. In the summer semester of 2023, 
+              I started my studies in Media Informatics at the Stuttgart Media University (Hochschule der Medien Stuttgart). 
+              Since July 2024, I have been working part-time as a software developer at Arianim GmbH, where I continue to apply and expand my technical skills alongside my studies.
               </p>
             </div>
           </div>

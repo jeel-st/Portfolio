@@ -23,8 +23,8 @@
     background-color: #8e8888;
     display: flex;
     align-items: left;
-    height: 400px;
-    justify-content: space-around;
+    height: auto;
+    justify-content: space-evenly;
     flex-direction: column;
     padding-left: 20%;
     padding-right: 20%;
@@ -33,19 +33,24 @@
     margin-bottom: 5%;
   }
   
-  .aboutMe h3 {
-    font-size: 20px;
-    font-weight: bold;
-  }
+
 
   .aboutMeInnerText{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     height: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
+  .aboutMeInnerText h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+  }
+
+  .aboutMeInnerText p {
+    line-height: 20px;
+  }
   .pictureName {
     background-color: #b8afaf;
     display: flex;
