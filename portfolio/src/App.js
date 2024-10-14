@@ -26,7 +26,7 @@ function HomePage() {
             <p className="hpSmallFont">Hi,</p>
             <h3 className="hpLargeFont">I AM JOEL</h3>
             <p className="hpSmallFont">a Computer scientist student</p>
-            <ContactButton />
+          {/* <ContactButton />*/ }
           </div>
           <div><img src={myImage} alt="Profilbild" id="firstHomePicture" /></div>
           </div>
