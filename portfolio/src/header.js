@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/header.css'; // Haupt-CSS für den Header
-import MenuButton from './buttons/menuButton'; // Importiere den ausgelagerten Menübutton
+import MenuButton from './buttons/MenuButton'; // Importiere den ausgelagerten Menübutton
 
 function Header() {
   const toggleDropdown = () => {
