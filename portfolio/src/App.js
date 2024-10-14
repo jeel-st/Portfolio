@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import './styles/aboutMe.css';
 import Header from './header'; 
 import myImage from "./images/BildJoelDunkel.JPG";
-import ContactButton from './buttons/contactButton';
+//import ContactButton from './buttons/contactButton';
 import ContactPage from './contact'; 
 import ProjectPage  from './projects'; 
 
