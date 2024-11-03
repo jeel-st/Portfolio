@@ -8,6 +8,7 @@ import myImage from "./images/BildJoelDunkel.JPG";
 import ContactButton from './buttons/ContactButton';
 import ContactPage from './contact'; 
 import ProjectPage  from './projects'; 
+import Footer from "./footer";
 
 function HomePage() {
   useEffect(() => {
@@ -82,6 +83,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} /> 
         <Route path="/projects" element={<ProjectPage />} /> 
       </Routes>
+      <Footer />
     </Router>
   );
 }

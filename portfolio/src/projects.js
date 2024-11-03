@@ -31,7 +31,7 @@ function ProjectPage() {
                             We also leveraged GitLab for version control and CI/CD pipelines.
                         </p>
                         <br />
-                        <p><a href="https://gitlab.mi.hdm-stuttgart.de/lg107/sipster" target="_blank" rel="noopener noreferrer">Take a look at the code</a></p>
+                        <p><a href="https://github.com/jeel-st/Sipster" target="_blank" rel="noopener noreferrer">Take a look at the code</a></p>
                     </div>
                 </div>
                 <div className="projectStructure" data-aos="fade-up">
@@ -44,7 +44,22 @@ function ProjectPage() {
                         <br/>
                         <p>I created this website using React and CSS. The runtime environment was again node.js, with Nginx as the web server</p>
                         <br/>
-                        <p><a href="https://gitlab.com/joel.starkov/portfoliofrontend" target="_blank" rel="noopener noreferrer">Take a look at the code</a></p>
+                        <p><a href="https://github.com/jeel-st/Portfolio" target="_blank" rel="noopener noreferrer">Take a look at the code</a></p>
+                    </div>
+                </div>
+                <div className="projectStructure" data-aos="fade-up">
+                    <div>
+                        <img src={BudgetBloomImg} alt="BudgetBloom"/>
+                    </div>
+                    <div className="projectDescription">
+                        <h2>Secret Sips</h2>
+                        <p>This game was specially developed for birthdays and other parties and celebrations. You simply enter your name and off you go with a personalized or general mission.
+                            Each mission is worth one point and the aim is to collect as many points as possible in one evening - 
+                            but beware, if you are caught and charged, the mission has to be aborted and you have to give up your point.</p>
+                        <br/>
+                        <p>For this project I worked exclusively in the backend. I used node.js and JavaScript for this.</p>
+                        <br/>
+                        <p><a href="https://github.com/jeel-st/SecretSipsBackend" target="_blank" rel="noopener noreferrer">Take a look at the code</a></p>
                     </div>
                 </div>
                 <div className="projectStructure" data-aos="fade-up">
@@ -59,7 +74,7 @@ function ProjectPage() {
                         <br/>
                         <p>This project was developed exclusively with Java and PostgreSQL. JavaFX was used with the help of Scenebuilder.</p>
                         <br/>
-                        <p><a href="https://gitlab.mi.hdm-stuttgart.de/js486/se2budgetboom" target="_blank" rel="noopener noreferrer">Take a look at the code</a></p>
+                        <p><a href="https://github.com/jeel-st/BudgetBloom" target="_blank" rel="noopener noreferrer">Take a look at the code</a></p>
                     </div>
                 </div>
             </div>

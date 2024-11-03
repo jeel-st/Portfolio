@@ -1,0 +1,12 @@
+footer {
+    background-color: #b8afaf; /* Helle Hintergrundfarbe für den Footer */
+    padding: 20px; /* Abstand um den Inhalt im Footer */
+    text-align: center; /* Text zentrieren */
+    border-top: 1px solid #b8afaf; /* Oberer Rand für Abgrenzung */
+  }
+  
+  .footerContent p {
+    margin: 5px 0; /* Abstände zwischen den Paragraphen */
+    font-size: 14px; /* Schriftgröße anpassen */
+    color: #555; /* Textfarbe */
+  }
